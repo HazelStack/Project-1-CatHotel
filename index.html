@@ -10,56 +10,63 @@
 </head>
 <body>
 
-  <!-- Header with social buttons -->
-  <header class="position-relative text-center py-4">
-    <div class="social-buttons position-absolute top-0 end-0 m-3">
-      <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-dark btn-sm me-1">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-dark btn-sm me-1">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a href="https://www.yelp.com" target="_blank" class="btn btn-outline-dark btn-sm">
-        <i class="bi bi-yelp"></i>
-      </a>
-    </div>
-    <h1>Purrfect Stay</h1>
-    <p>Proudly serving Palmdale, Los Angeles, Kern, San Bernandino Counties for 28 years!</p>
-
-    <!-- Buttons: Reserve Online + Contact Us -->
-    <div class="text-center my-4 d-flex justify-content-center gap-3 flex-wrap">
-      <a href="https://your-reservation-link.com" class="btn btn-primary reserve-btn" target="_blank">
-        Reserve Online
-      </a>
-      <button type="button" class="btn btn-primary reserve-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Contact Us
-      </button>
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Explore</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tour the Hotel</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Preparing for Your Stay</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Rooms & Rates</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Visit Us</a></li>
-        </ul>
+  <!-- Header -->
+    <header class="bg-cream py-4">
+  <!-- Container for logo + site name + buttons -->
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <!-- Logo and Site Name -->
+    <div class="d-flex align-items-center gap-3">
+      <img src="images/logo.jpg" alt="Purrfect Stay Logo" class="logo-img">
+      <div>
+        <h1 class="mb-0">Purrfect Stay</h1>
+        <p class="header-tagline mb-0"> Serving Palmdale, Los Angeles, and Kern Counties for 28 years!</p>
       </div>
     </div>
-  </nav>
-
+    <!-- Buttons Section -->
+<div class="header-buttons d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mt-3">
+  <!-- Reserve Online -->
+  <a href="https://your-reservation-link.com" class="btn btn-primary reserve-btn" target="_blank">
+    Reserve Online
+  </a>
+  <!-- Contact Modal -->
+  <button type="button" class="btn btn-primary reserve-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Contact Us
+  </button>
+</div>
+      <!-- Social Buttons -->
+      <div class="social-buttons d-flex gap-2 mt-2 mt-md-0">
+        <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.yelp.com" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-yelp"></i></a>
+    </div>
+     </div>
+    </div>
+    </header>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-cream shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="images/logo.jpg" alt="Purrfect Stay Logo" width="45" height="45" class="me-2 rounded-circle shadow-sm">
+      <span style="font-family: 'Georgia', serif; color:#3b2f2f;">Purrfect Stay</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="#">Tour the Hotel</a></li>
+        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="#">Preparing for Your Stay</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <!-- Main Content -->
   <main class="container-fluid">
 
     <!-- Carousel -->
+<section class="bg-gradient-warm">
     <div id="carouselExampleCaptions" class="carousel slide my-4">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
@@ -98,34 +105,50 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+    </section>
     <!-- Tagline -->
-    <h2 class="tagline text-center mt-4">Our Guests Living Their Best Nine Lives</h2>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="section-title mb-4">What Our Guests Say</h2>
-        <div class="testimonial-cards d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-3">
-          <div class="card testimonial-card p-3">
-            <p class="testimonial-text">"My cats absolutely loved their stay! Highly recommend Purrfect Stay."</p>
-            <h5 class="testimonial-author">— Emily R.</h5>
-          </div>
-          <div class="card testimonial-card p-3">
-            <p class="testimonial-text">"Professional and loving staff. My senior cats felt at home."</p>
-            <h5 class="testimonial-author">— Mark L.</h5>
-          </div>
-          <div class="card testimonial-card p-3">
-            <p class="testimonial-text">"I feel safe leaving my cats here. Wonderful experience!"</p>
-            <h5 class="testimonial-author">— Sarah K.</h5>
-          </div>
+  <h2 class="tagline text-center">Our Guests Living Their Best Nine Lives</h2>
+<div class="tagline-divider">
+  <span>🐾</span>
+</div>
+  <div class="container-fluid bg-gradient-warm">
+    </section>
+    <h2 class="section-title text-center mb-5">Testimonials</h2>
+    <div class="testimonial-cards d-flex flex-column gap-4 align-items-center">
+      <!-- Testimonial 1 -->
+      <div class="testimonial d-flex align-items-start gap-3">
+        <img src="images/pexels-happycat.jpg" alt="Emily's Cat" class="testimonial-avatar">
+        <div class="testimonial-text">
+          <p>"My cats absolutely loved their stay! Highly recommend Purrfect Stay."</p>
+          <h5>— Emily R.</h5>
         </div>
       </div>
-    </section>
+      
 
+      <!-- Testimonial 2 -->
+      <div class="testimonial d-flex align-items-start gap-3">
+        <img src="images/pexels-teddybearcat.jpg" alt="Mark's Cat" class="testimonial-avatar">
+        <div class="testimonial-text">
+          <p>"Professional and loving staff. My senior cats felt at home."</p>
+          <h5>— Mark L.</h5>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial d-flex align-items-start gap-3">
+        <img src="images/pexels-kisscat.jpg" alt="Sarah's Cat" class="testimonial-avatar">
+        <div class="testimonial-text">
+          <p>"I feel safe leaving my cats here. Wonderful experience!"</p>
+          <h5>— Sarah K.</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- Daily Rates Section -->
-    <section class="daily-rates-section py-5">
-      <div class="container text-center">
+     <div class="section-divider"><span>🐾</span></div>
+     <section class="container-fluid text-center">
         <h2 class="section-title mb-4">Daily Rates</h2>
         <div class="rates-cards d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-3">
           <div class="card rate-card p-3">
@@ -148,8 +171,9 @@
     </section>
 
     <!-- Location Section -->
+     <div class="section-divider"><span>🐾</span></div>
     <section class="location-section py-5">
-      <div class="container text-center">
+      <div class="container text-center bg-gradient-warm">
         <h2 class="section-title mb-4">Our Location</h2>
         <div class="map-container">
           <iframe 
@@ -162,7 +186,7 @@
 
     <!-- Hours Section -->
     <section class="hours-section py-5">
-      <div class="container text-center">
+      <div class="container text-center bg-gradient-warm">
         <h2 class="section-title mb-4">Hours of Operation</h2>
         <p class="hours-text mb-1">Monday - Friday: 8:00 AM – 6:00 PM</p>
         <p class="hours-text mb-1">Saturday: 9:00 AM – 5:00 PM</p>
@@ -172,7 +196,7 @@
 
     <!-- Contact Info Section -->
     <section class="contact-section py-5">
-      <div class="container text-center">
+      <div class="container text-center bg-gradient-warm">
         <h2 class="section-title mb-4">Contact Us</h2>
         <p class="contact-text mb-1">Phone: (123) 456-7890</p>
         <p class="contact-text mb-1">Email: info@purrfectstay.com</p>
@@ -204,10 +228,10 @@
   <!-- Back to Top Button -->
 <button id="backToTop" title="Go to top">↑</button>
 
+<footer>
+  <p>&copy; 2025 Purrfect Stay Cat Hotel. All rights reserved.</p>
+</footer>
 
-  <footer class="py-4 text-center">
-    <p>&copy; 2025 Purrfect Stay Cat Hotel. All rights reserved.</p>
-  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script>
   // Get the button
@@ -227,6 +251,13 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
-
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+ a.addEventListener('click',e=>{
+  e.preventDefault();
+  document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+ });
+});
+</script>
 </body>
 </html>
