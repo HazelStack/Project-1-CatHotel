@@ -115,6 +115,58 @@ header p.header-tagline {
 }
 @media (min-width:992px){#carouselExampleCaptions img{height:400px;}}
 
+
+
+/* Make tour carousel match index.html */
+#tourCarousel {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#tourCarousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#tourCarousel .carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+#tourCarousel .carousel-caption {
+  background: rgba(170,169,169,0.45);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  backdrop-filter: blur(4px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#tourCarousel .carousel-caption h5,
+#tourCarousel .carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+@media (max-width:768px){
+  #tourCarousel .carousel-caption { padding:6px 10px; }
+  #tourCarousel .carousel-caption h5 { font-size:1.1rem; }
+  #tourCarousel .carousel-caption p { font-size:0.9rem; }
+  #tourCarousel img { height:250px; }
+}
+
+@media (min-width:992px){
+  #tourCarousel img { height:400px; }
+}
+
+
 /* --- Tagline --- */
 .tagline {
   font-size: 1.8rem;
