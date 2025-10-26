@@ -1,0 +1,418 @@
+/* --- Responsive Carousel Styling --- */
+#carouselExampleCaptions {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#carouselExampleCaptions img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* subtle zoom effect on hover */
+}
+
+#carouselExampleCaptions .carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+/* --- Caption Styling --- */
+.carousel-caption {
+  background: rgba(170, 169, 169, 0.45); /* translucent overlay */
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block; /* shrink to text width */
+  backdrop-filter: blur(4px); /* subtle blur behind text */
+  left: 50%;
+  transform: translateX(-50%); /* center captions horizontally */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff; /* ensure readability */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* --- Responsive Text Adjustments --- */
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 6px 10px;
+  }
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  #carouselExampleCaptions img {
+    height: 250px; /* compact carousel on small screens */
+    object-fit: cover;
+  }
+}
+
+/* --- Desktop Image Height --- */
+@media (min-width: 992px) {
+  #carouselExampleCaptions img {
+    height: 400px;
+  }
+}
+
+/* --- Tagline Styling --- */
+.tagline {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.8rem;
+  color: #3b2f2f; /* warm brown, cat-like tone */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Optional: adjust tagline on mobile */
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 1.3rem;
+  }
+}
+
+/* --- Header Styling --- */
+header {
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #3b2f2f; /* same warm brown as tagline */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 0; /* default padding, overridden on mobile */
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  margin-bottom: 0;
+}
+
+/* --- Social Media Buttons - Round Paw Theme --- */
+.social-buttons {
+  display: flex;
+  gap: 8px;             
+  flex-wrap: nowrap;     
+  justify-content: flex-end; 
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  color: #3b2f2f; /* warm brown */
+  border: 2px solid #3b2f2f;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Paw overlay on hover */
+.social-btn::after {
+  content: "🐾";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1.4);
+  opacity: 1;
+}
+
+.social-btn:hover {
+  background-color: #3b2f2f;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 480px) {
+  /* Stack social buttons vertically */
+  .social-buttons {
+    flex-direction: column;
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+  }
+
+  .social-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  /* Header padding so buttons don't overlap text */
+  header {
+    padding-top: 60px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+/* --- Testimonial Section --- */
+.testimonial-section {
+  background-color: #f8f8f8; /* light background for contrast */
+}
+
+.section-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #3b2f2f;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1rem;
+  color: #3b2f2f;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #3b2f2f;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+/* --- Daily Rates Section --- */
+.daily-rates-section {
+  background-color: #f0f0f0; /* subtle contrast background */
+}
+
+.rates-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.rate-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.rate-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #3b2f2f;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.rate-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3b2f2f;
+  margin-bottom: 0.5rem;
+}
+
+.rate-description {
+  font-size: 1rem;
+  color: #3b2f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rates-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+/* --- Hours Section --- */
+.hours-section {
+  background-color: #f0f0f0;
+  color: #3b2f2f;
+}
+
+.hours-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+  background-color: #ffffff;
+  color: #3b2f2f;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #3b2f2f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #5a4b4b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hours-text,
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+.reserve-btn {
+  background-color: #3b2f2f; /* warm brown */
+  border-color: #3b2f2f;
+  color: #fff;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.reserve-btn:hover {
+  background-color: #5a4b4b;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* Modal Form Inputs */
+#modalContactForm input,
+#modalContactForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+/* Modal Button matches Reserve Online styling */
+#modalContactForm .reserve-btn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #3b2f2f;
+  border-color: #3b2f2f;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+#modalContactForm .reserve-btn:hover {
+  background-color: #5a4b4b;
+  transform: scale(1.02);
+}
+/* Hover effect for both buttons */
+.reserve-btn:hover {
+  background-color: #5a4b4b;
+  transform: scale(1.05);
+}
+/* --- Back to Top Button --- */
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #3b2f2f; /* warm brown */
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#backToTop:hover {
+  background-color: #5a4b4b;
+  transform: scale(1.1);
+}
+
