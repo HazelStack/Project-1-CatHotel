@@ -426,6 +426,44 @@ footer p {
   margin: 10px 0 0 0;
   font-size: 0.95rem;
 }
+/* Confirmation Page Styles */
+.confirmation-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5a3e2b;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  background-color: #fff8f2;
+}
 
+.paw-icon {
+  font-size: 4rem;
+  color: #b8860b;
+}
 
+.btn-brown {
+  background-color: #5a3e2b;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-brown:hover {
+  background-color: #704c36;
+}
+
+/* Sticky Footer Fix */
+footer {
+  flex-shrink: 0;
+}
+.confirmation-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
 
