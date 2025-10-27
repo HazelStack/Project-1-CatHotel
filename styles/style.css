@@ -466,4 +466,26 @@ footer {
   width: 100%;
   height: auto;
 }
+/* Sleek Award Badge */
+.award-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-logo {
+  height: 300px; /* adjust size as needed */
+  width: auto;
+  border-radius: 12px; /* optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle depth */
+}
+
+.award-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b8860b; /* golden award color */
+  margin: 0;
+  text-align: center;
+}
 
