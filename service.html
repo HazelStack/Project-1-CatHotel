@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Purrfect Stay ~ Tour the Hotel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
-<!-- Header -->
-<header class="bg-cream py-4">
-  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-    <!-- Logo + Site Name -->
-    <div class="d-flex align-items-center gap-3">
-      <img src="images/logo.jpg" alt="Purrfect Stay Logo" class="logo-img">
-      <div>
-        <h1 class="mb-0">Purrfect Stay</h1>
-        <p class="header-tagline mb-0">Serving Palmdale, Los Angeles, and Kern Counties for 28 years!</p>
-      </div>
-    </div>
-    <!-- Buttons -->
-    <div class="header-buttons d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mt-3">
-      <a href="reserve.html" class="btn btn-primary reserve-btn" target="_blank">Reserve Online</a>
-      <button type="button" class="btn btn-primary reserve-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
-    </div>
-
-    
-  </div>
-</header>
-
-<!-- Sticky Navbar -->
-<nav class="navbar navbar-expand-lg bg-cream shadow-sm sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="images/logo.jpg" alt="Purrfect Stay Logo" width="45" height="45" class="me-2 rounded-circle shadow-sm">
-      <span style="font-family: 'Georgia', serif; color:#3b2f2f;">Purrfect Stay</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="tour.html">Tour the Hotel</a></li>
-        <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="prep.html">Preparing for Your Stay</a></li>
-        <li class="nav-item"><a class="nav-link text-brown fw-semibold active" href="#">Our Services</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main class="container-fluid">
-
-  <!-- Hero Carousel -->
-  <section class="bg-gradient-warm">
-    <div id="tourCarousel" class="carousel slide my-4">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/smile-cat.jpg" class="d-block w-100" alt="Cat-Smiling">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Furrtastic Deals!</h5>
-            <p>For a limited time only, new guests who reserve online will receive 10% off</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfect Stay ~ Tour the Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header class="bg-cream py-4">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <img src="images/logo.jpg" alt="Purrfect Stay Logo" class="logo-img">
+          <div>
+            <h1 class="mb-0">Purrfect Stay</h1>
+            <p class="header-tagline mb-0">Serving Palmdale, Los Angeles, and Kern Counties for 28 years!</p>
           </div>
         </div>
+        <div class="header-buttons d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mt-3">
+          <a href="reserve.html" class="btn btn-primary reserve-btn" target="_blank">Reserve Online</a>
+          <button type="button" class="btn btn-primary reserve-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-cream shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="images/logo.jpg" alt="Purrfect Stay Logo" width="45" height="45" class="me-2 rounded-circle shadow-sm">
+          <span style="font-family: 'Georgia', serif; color:#3b2f2f;">Purrfect Stay</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="tour.html">Tour the Hotel</a></li>
+            <li class="nav-item"><a class="nav-link text-brown fw-semibold" href="prep.html">Preparing for Your Stay</a></li>
+            <li class="nav-item"><a class="nav-link text-brown fw-semibold active" href="#">Our Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid">
+      <section class="bg-gradient-warm">
+        <div id="tourCarousel" class="carousel slide my-4">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/smile-cat.jpg" class="d-block w-100" alt="Cat-Smiling">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Furrtastic Deals!</h5>
+              <p>For a limited time only, new guests who reserve online will receive 10% off</p>
+            </div>
+          </div>
         <div class="carousel-item">
           <img src="images/two-cats.jpg" class="d-block w-100" alt="Cat-Grooming">
           <div class="carousel-caption d-none d-md-block">
@@ -78,177 +67,151 @@
             <p>Booking longer than 4 weeks, 10% off. Longer than 8 weeks, 15% off.</p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="images/multiple-cats-referral.jpg" class="d-block w-100" alt="Cat-Multiple">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Check out our Referral Program</h5>
-            <p>Refer us, get 20% off your stay.</p>
+            <div class="carousel-item">
+              <img src="images/multiple-cats-referral.jpg" class="d-block w-100" alt="Cat-Multiple">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Check out our Referral Program</h5>
+                <p>Refer us, get 20% off your stay.</p>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- Tagline -->
-  <h2 class="tagline text-center">Feline Luxury, Budget Friendly</h2>
-  <div class="section-divider"><span>🐾</span></div>
-
-  <!-- Our Services Sections -->
+      </section>
+      <h2 class="tagline text-center">Feline Luxury, Budget Friendly</h2>
+      <div class="section-divider"><span>🐾</span></div>
   <section class="py-5 bg-gradient-warm">
     <div class="container">
       <h2 class="section-title text-center mb-5">Our Services</h2>
-    <div class="container-fluid py-5 bg-light">
-  <div class="row align-items-center">
-<div class="container-fluid py-5 bg-light">
-  <div class="row align-items-center">
-    <!-- Image Section -->
-    <div class="col-md-6 text-center">
-      <img 
-        src="images/phone-cat.jpg" 
-        alt="Cat taking picture" 
-        class="img-fluid rounded shadow-sm"
-      >
-    </div>
-    <!-- Text Section -->
-    <div class="col-md-6">
-      <h2 class="mb-3">Activity Updates</h2>
-      <p class="lead">
-        We'll keep you updated on what your furry kids are up to while they're with us. 
-        From settling in to playful mischief, you’ll know how your cats are enjoying their stay!
-      </p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid py-5 bg-light">
-  <div class="row align-items-center">
-    <!-- Image Section -->
-    <div class="col-md-6 text-center">
-      <img 
-        src="images/eating-cats.jpeg" 
-        alt="Cats enjoying a meal" 
-        class="img-fluid rounded shadow-sm"
-      >
-    </div>
-    <!-- Text Section -->
-    <div class="col-md-6">
-      <h2 class="mb-3">Daily Meals</h2>
-      <p class="lead">
-        We provide your cat with Royal Canin Dry Food, a favorite among our guests. 
-        Wet food is available for purchase, or you are welcome to bring your own if your cat has a special diet.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="container-fluid py-5 bg-light">
-  <div class="row align-items-center">
-    <!-- Image Section -->
-    <div class="col-md-6 text-center">
-      <img 
-        src="images/taxi-cat.jpg" 
-        alt="Cat transport service" 
-        class="img-fluid rounded shadow-sm"
-      >
-    </div>
-    <!-- Text Section -->
-    <div class="col-md-6">
-      <h2 class="mb-3">Meow Taxi</h2>
-      <p class="lead">
-        We offer a convenient pet transport service to assist owners and make life easier. 
-        Pickup is available for select areas of Palmdale and Lancaster on weekdays between 9:30am and 10:30am.
-      </p>
-    </div>
-  </div>
-</div>
-
-  <!-- Divider -->
-  <div class="section-divider"><span>🐾</span></div>
-
-  <!-- Location -->
-  <section class="location-section py-5">
-    <div class="container text-center bg-gradient-warm">
-      <h2 class="section-title mb-4">Our Location</h2>
-      <div class="map-container" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.0000000000005!2d-118.1186499!3d34.583755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2582eb0c6adc1%3A0xYOUR_PLACE_ID!2sPurrfect+Stay+Cat+Hotel!5e0!3m2!1sen!2sus!4v0000000000000"
-          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+      <div class="container-fluid py-5 bg-light">
+        <div class="row align-items-center">
+          <div class="container-fluid py-5 bg-light">
+            <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+              <img 
+              src="images/phone-cat.jpg" 
+              alt="Cat taking picture" 
+              class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6">
+            <h2 class="mb-3">Activity Updates</h2>
+              <p class="lead">
+                We'll keep you updated on what your furry kids are up to while they're with us. 
+                From settling in to playful mischief, you’ll know how your cats are enjoying their stay!
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- Hours -->
-  <section class="hours-section py-5">
-    <div class="container text-center bg-gradient-warm">
-      <h2 class="section-title mb-4">Hours of Operation</h2>
-      <p class="hours-text mb-1">Monday - Friday: 8:00 AM – 6:00 PM</p>
-      <p class="hours-text mb-1">Saturday: 9:00 AM – 5:00 PM</p>
-      <p class="hours-text mb-1">Sunday: Closed</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact-section py-5">
-    <div class="container text-center bg-gradient-warm">
-      <h2 class="section-title mb-4">Contact Us</h2>
-      <p class="contact-text mb-1">Phone: (123) 456-7890</p>
-      <p class="contact-text mb-1">Email: info@purrfectstay.com</p>
-      <p class="contact-text mb-1">Address: 123 Cat Lane, Palmdale, CA</p>
-    </div>
-  </section>
-
-</main>
-
-<!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Send Us a Message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="container-fluid py-5 bg-light">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img 
+          src="images/eating-cats.jpeg" 
+          alt="Cats enjoying a meal" 
+          class="img-fluid rounded shadow-sm">
       </div>
-      <div class="modal-body">
-        <form id="modalContactForm">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit" class="btn btn-primary reserve-btn mt-2">Send Message</button>
-        </form>
+      <div class="col-md-6">
+        <h2 class="mb-3">Daily Meals</h2>
+        <p class="lead">
+          We provide your cat with Royal Canin Dry Food, a favorite among our guests. 
+          Wet food is available for purchase, or you are welcome to bring your own if your cat has a special diet.
+        </p>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Back to Top Button -->
-<button id="backToTop" title="Go to top">↑</button>
-
-<!-- Footer -->
-<footer class="bg-dark-brown text-center py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-    <p class="mb-2 mb-md-0">&copy; 2025 Purrfect Stay Cat Hotel. All rights reserved.</p>
-    <div class="social-buttons d-flex gap-2">
-      <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.yelp.com" target="_blank" class="social-btn"><i class="bi bi-yelp"></i></a>
+  <div class="container-fluid py-5 bg-light">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img 
+          src="images/taxi-cat.jpg" 
+          alt="Cat transport service" 
+          class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Meow Taxi</h2>
+        <p class="lead">
+          We offer a convenient pet transport service to assist owners and make life easier. 
+          Pickup is available for select areas of Palmdale and Lancaster on weekdays between 9:30am and 10:30am.
+        </p>
+      </div>
     </div>
   </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script>
-  const backToTopBtn = document.getElementById("backToTop");
-  window.onscroll = () => {
-    backToTopBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
-  };
-  backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
-
-</body>
+    <div class="section-divider"><span>🐾</span></div>
+    <section class="location-section py-5">
+      <div class="container text-center bg-gradient-warm">
+        <h2 class="section-title mb-4">Our Location</h2>
+        <div class="map-container" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.0000000000005!2d-118.1186499!3d34.583755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2582eb0c6adc1%3A0xYOUR_PLACE_ID!2sPurrfect+Stay+Cat+Hotel!5e0!3m2!1sen!2sus!4v0000000000000"
+            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section class="hours-section py-5">
+      <div class="container text-center bg-gradient-warm">
+        <h2 class="section-title mb-4">Hours of Operation</h2>
+        <p class="hours-text mb-1">Monday - Friday: 8:00 AM – 6:00 PM</p>
+        <p class="hours-text mb-1">Saturday: 9:00 AM – 5:00 PM</p>
+        <p class="hours-text mb-1">Sunday: Closed</p>
+      </div>
+    </section>
+    <section class="contact-section py-5">
+      <div class="container text-center bg-gradient-warm">
+        <h2 class="section-title mb-4">Contact Us</h2>
+        <p class="contact-text mb-1">Phone: (123) 456-7890</p>
+        <p class="contact-text mb-1">Email: info@purrfectstay.com</p>
+        <p class="contact-text mb-1">Address: 123 Cat Lane, Palmdale, CA</p>
+      </div>
+    </section>
+  </main>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Send Us a Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modalContactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary reserve-btn mt-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="backToTop" title="Go to top">↑</button>
+  <footer class="bg-dark-brown text-center py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">&copy; 2025 Purrfect Stay Cat Hotel. All rights reserved.</p>
+      <div class="social-buttons d-flex gap-2">
+        <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.yelp.com" target="_blank" class="social-btn"><i class="bi bi-yelp"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    const backToTopBtn = document.getElementById("backToTop");
+    window.onscroll = () => {
+      backToTopBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+  </body>
 </html>
