@@ -34,6 +34,9 @@ A web application for a cat boarding business that allows customers to explore s
 3. User can Pay Online using the booking system.
 4. Returning users can save their cat's information, vaccination records, and past bookings. 
 ## WireFrames
-[Home Page- Desktop Version](images/Home-Page.drawio.svg)
-[Preparing for Your Stay Page-Mobile Version](images/Prep.drawio.svg)
-[Gallery Page- Desktop Version](images/Gallery-Page.drawio.svg)
+1. [Home Page- Desktop Version](images/Home-Page.drawio.svg)
+2. [Tour the Hotel Page- Mobile Version](images/Tour-the-Hotel.drawio.svg)
+3. [Preparing for Your Stay Page- Mobile Version](images/Prep.drawio.svg)
+4. [Our Service Page- Desktop Version](images/Services.drawio.svg)
+5. [Gallery Page- Desktop Version](images/Gallery-Page.drawio.svg)
+
