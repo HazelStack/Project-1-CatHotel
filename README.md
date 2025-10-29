@@ -1,6 +1,11 @@
 # Project-1-CatHotel
-## created by: [Hazel Arevalo] (https:///linkedin.com/harevalo123)
+## created by: [Hazel Arevalo](https:///linkedin.com/in/harevalo123)
 A web application for a cat boarding business that allows customers to explore services, view accommodations, and book stays for their feline companions.
+## Features:
+- Modern, responsive design using HTML, CSS, Bootstrap, and JavaScript
+- Photo gallery and testimonials
+- Detailed service and rate information
+- Contact and location section with integrated map
 ## User Stories
 1. Booking a Stay: As a cat owner who needs to board my cat while moving apartments, I want to reserve their stay online, so that I can focus on moving while knowing my cat is safe and cared for.
     - Acceptance Criteria: 
@@ -22,10 +27,13 @@ A web application for a cat boarding business that allows customers to explore s
 1. HTML
 2. CSS
 3. Bootstrap v5.3.8
+4. JavaScript
 ## Ideas for Future Improvement
 1. User can request pickup/drop-off during the booking process.
 2. User receives notification once their cat has been transported.
 3. User can Pay Online using the booking system.
 4. Returning users can save their cat's information, vaccination records, and past bookings. 
 ## WireFrames
-[home page](images/Home-Page.drawio.svg)
+[Home Page- Desktop Version](images/Home-Page.drawio.svg)
+[Preparing for Your Stay Page-Mobile Version](images/Prep.drawio.svg)
+[Gallery Page- Desktop Version](images/Gallery-Page.drawio.svg)
