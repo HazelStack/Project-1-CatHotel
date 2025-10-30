@@ -1,11 +1,12 @@
 # Project-1-CatHotel
 ## Developer: [Hazel Arevalo](https:///linkedin.com/in/harevalo123)
-A web application for a cat boarding business that allows customers to explore services, view accommodations, and book stays for their feline companions.
+Purrfect Stay is a cat boarding web application designed to make caring for your feline friend simple and stress-free. Our site allows cat owners to explore our cozy accommodations, learn about our trusted services, and easily book stays online. Whether you’re planning a weekend getaway or a long vacation, Purrfect Stay ensures your cat enjoys a comfortable, safe, and loving home away from home.
 ## Features
-- Modern, responsive design using HTML, CSS, Bootstrap, and JavaScript
-- Photo gallery and testimonials
-- Detailed service and rate information
-- Contact and location section with integrated map
+- Responsive front-end design using HTML, CSS, Bootstrap, and JavaScript
+- Image carousel and testimonial sections to showcase customer experiences
+- Dynamic service and rate listings with organized layouts
+- Embedded Google Map and contact form for direct communication
+- Lightweight, accessible, and optimized for performance
 ## Technology Used
 1. HTML
 2. CSS
