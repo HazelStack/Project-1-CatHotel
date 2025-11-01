@@ -12,6 +12,8 @@ Purrfect Stay is a cat boarding web application designed to make caring for your
 2. CSS
 3. Bootstrap v5.3.8
 4. JavaScript
+## Live Demo
+https://hazelstack.github.io/Project-1-CatHotel/
 ## Wireframes
 ### Home Page – Desktop Version
 ![Home Page Wireframe](images/Home-Page.drawio.svg)
